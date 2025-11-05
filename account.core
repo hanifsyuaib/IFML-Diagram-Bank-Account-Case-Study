@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="ASCII"?>
+<core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:ext="http://www.omg.org/spec/20130218/ext" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_IJnoQFMoEfCbaIqdZEICjA">
+  <interactionFlowModel id="_K3hY8FMoEfCbaIqdZEICjA">
+    <interactionFlowModelElements xsi:type="core:ModuleDefinition" id="_K3u0UFMoEfCbaIqdZEICjA" name="BankAccount">
+      <interactionFlowModelElement xsi:type="core:ViewContainer" id="_OLm_4FMoEfCbaIqdZEICjA" name="Table Account Page">
+        <annotations text="/account"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElementEvents.0/@outInteractionFlows.0"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2/@viewElementEvents.0/@outInteractionFlows.0"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4/@actionEvents.0/@outInteractionFlows.0"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.6/@actionEvents.0/@outInteractionFlows.0"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="main.core#//@interactionFlowModel/@interactionFlowModelElements.1/@viewElementEvents.0/@outInteractionFlows.0"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.7/@actionEvents.0/@outInteractionFlows.0"/>
+        <viewElementEvents id="_S8K58FMqEfCbaIqdZEICjA" name="Transfer">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_URg8QFMqEfCbaIqdZEICjA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2"/>
+        </viewElementEvents>
+        <viewElementEvents id="_YiuSwFMqEfCbaIqdZEICjA" name="Add Account">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_Z42_QFMqEfCbaIqdZEICjA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.5"/>
+        </viewElementEvents>
+        <viewElements xsi:type="ext:List" id="_TCX6gFMoEfCbaIqdZEICjA" name="Table Account">
+          <viewElementEvents id="_fkY9sFM1EfCbaIqdZEICjA" name="Detail">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_g-xRAFM1EfCbaIqdZEICjA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1">
+              <parameterBindingGroup id="_hs4UMFM1EfCbaIqdZEICjA">
+                <parameterBindings id="_jNcIAFM1EfCbaIqdZEICjA" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewComponentParts.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@parameters.0"/>
+              </parameterBindingGroup>
+            </outInteractionFlows>
+          </viewElementEvents>
+          <viewElementEvents id="_z2CjcFOtEfCOUPTvd4G1fg" name="Update">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_1-YI8FOtEfCOUPTvd4G1fg" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.1">
+              <parameterBindingGroup id="_21wc4FOtEfCOUPTvd4G1fg">
+                <parameterBindings id="_39aogFOtEfCOUPTvd4G1fg" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewComponentParts.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.1/@parameters.0"/>
+              </parameterBindingGroup>
+            </outInteractionFlows>
+          </viewElementEvents>
+          <viewElementEvents id="__3f-wFSgEfCQSYnpSPJcWA" name="Delete">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_Elc7oFShEfCQSYnpSPJcWA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.2">
+              <parameterBindingGroup id="_NnarYFShEfCQSYnpSPJcWA">
+                <parameterBindings id="_QaVe8FShEfCQSYnpSPJcWA" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewComponentParts.0/@parameters.0">
+                  <targetParameter href="overdraft.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.1/@parameters.0"/>
+                </parameterBindings>
+              </parameterBindingGroup>
+            </outInteractionFlows>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="core:DataBinding" id="_Vxd-AFMoEfCbaIqdZEICjA" name="List Account" uniformResourceIdentifier="call/account/list">
+            <parameters id="_TqE-QFMpEfCbaIqdZEICjA" name="id_account" direction="out"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_YkXjcFMoEfCbaIqdZEICjA" name="Id Account">
+              <featureConcept href="main.core#//@domainModel/@domainElements.18"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_a_38kFMoEfCbaIqdZEICjA" name="Balance">
+              <annotations text="isCurrency"/>
+              <featureConcept href="main.core#//@domainModel/@domainElements.19"/>
+            </subViewComponentParts>
+          </viewComponentParts>
+        </viewElements>
+        <viewElements xsi:type="ext:IFMLWindow" id="_MDWA8FMqEfCbaIqdZEICjA" name="Ubah Balance Account" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewElementEvents.1/@outInteractionFlows.0" isModal="true">
+          <parameters id="_-q30cFOsEfCOUPTvd4G1fg" name="id_account"/>
+          <viewElements xsi:type="ext:Form" id="_a4lW4FMqEfCbaIqdZEICjA" name="Ubah Balance Account">
+            <parameters id="_CxC_oFOtEfCOUPTvd4G1fg" name="id_account" direction="inout"/>
+            <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_gJvHcFMqEfCbaIqdZEICjA" name="Ubah">
+              <outInteractionFlows xsi:type="core:NavigationFlow" id="_YZvmYFOtEfCOUPTvd4G1fg" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.6"/>
+            </viewElementEvents>
+            <viewComponentParts xsi:type="core:DataBinding" id="_GVuAQFOtEfCOUPTvd4G1fg" name="AccountData" uniformResourceIdentifier="call/account/detail">
+              <subViewComponentParts xsi:type="ext:SimpleField" id="_JZJVAFOtEfCOUPTvd4G1fg" name="Balance">
+                <subViewComponentParts xsi:type="ext:IFMLSlot" id="_ML5wgFOtEfCOUPTvd4G1fg" name="balance"/>
+              </subViewComponentParts>
+            </viewComponentParts>
+          </viewElements>
+        </viewElements>
+        <viewElements xsi:type="ext:IFMLWindow" id="_BfaXwFShEfCQSYnpSPJcWA" name="Konfirmasi Hapus Account" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewElementEvents.2/@outInteractionFlows.0" isModal="true">
+          <viewElementEvents id="_aTbrAFShEfCQSYnpSPJcWA" name="Hapus">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_caGckFShEfCQSYnpSPJcWA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.7">
+              <parameterBindingGroup id="_pTNh8LRlEfCcC7n1C0JN1Q">
+                <parameterBindings id="_z1JqYLZMEfCcC7n1C0JN1Q" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.1/@viewElements.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.1/@viewElements.0/@parameters.0"/>
+              </parameterBindingGroup>
+            </outInteractionFlows>
+          </viewElementEvents>
+        </viewElements>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:ViewContainer" id="_-90xoFMoEfCbaIqdZEICjA" name="Detail Account Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="/account/:id_account"/>
+        <viewElementEvents id="_EhDJoFMpEfCbaIqdZEICjA" name="Back">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_FmFfEFMpEfCbaIqdZEICjA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
+        </viewElementEvents>
+        <viewElements xsi:type="ext:Details" id="_HOyiQFMpEfCbaIqdZEICjA" name="Detail Account">
+          <parameters id="_Q4-IkFMpEfCbaIqdZEICjA" name="id_account"/>
+          <viewComponentParts xsi:type="core:DataBinding" id="_JM2xcFMpEfCbaIqdZEICjA" name="Detail Account Data" uniformResourceIdentifier="call/account/detail">
+            <parameters id="_d2FfQFMpEfCbaIqdZEICjA" name="id_account" direction="out"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_gdRj8FMpEfCbaIqdZEICjA" name="Id Account">
+              <featureConcept href="main.core#//@domainModel/@domainElements.18"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_ivF1kFMpEfCbaIqdZEICjA" name="Balance">
+              <annotations text="isCurrency"/>
+              <featureConcept href="main.core#//@domainModel/@domainElements.19"/>
+            </subViewComponentParts>
+          </viewComponentParts>
+        </viewElements>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:ViewContainer" id="_naaVMFMpEfCbaIqdZEICjA" name="Transfer Account Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3/@actionEvents.0/@outInteractionFlows.0 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="/account/transfer"/>
+        <viewElementEvents id="_Uua6sFMqEfCbaIqdZEICjA" name="Kembali">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_VztHwFMqEfCbaIqdZEICjA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
+        </viewElementEvents>
+        <viewElements xsi:type="ext:Form" id="_tuC2cFMpEfCbaIqdZEICjA" name="Transfer Account">
+          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_GgPkwFMqEfCbaIqdZEICjA" name="Submit">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_H7zj0FMqEfCbaIqdZEICjA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3"/>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_wZ_fUFMpEfCbaIqdZEICjA" name="Amount">
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_xj3RcFMpEfCbaIqdZEICjA" name="amount"/>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="core:DataBinding" id="_0yo6kFMpEfCbaIqdZEICjA" name="AccountOptions" uniformResourceIdentifier="call/account/select-options">
+            <subViewComponentParts xsi:type="ext:SelectionField" id="_2q748FMpEfCbaIqdZEICjA" name="From Account">
+              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_4rolYFMpEfCbaIqdZEICjA" name="id"/>
+              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_6o7_kFMpEfCbaIqdZEICjA" name="id_account" direction="out"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="ext:SelectionField" id="_-17kcFMpEfCbaIqdZEICjA" name="To Account">
+              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_A8PwsFMqEfCbaIqdZEICjA" name="id"/>
+              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_CUjAYFMqEfCbaIqdZEICjA" name="id_account_target" direction="out"/>
+            </subViewComponentParts>
+          </viewComponentParts>
+        </viewElements>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:IFMLAction" id="_EGYKYFMqEfCbaIqdZEICjA" name="Transfer Account" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="POST"/>
+        <actionEvents id="_JYCRQFMqEfCbaIqdZEICjA" name="then">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_KlC28FMqEfCbaIqdZEICjA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2"/>
+        </actionEvents>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:IFMLAction" id="_h37uoFMqEfCbaIqdZEICjA" name="Save Account" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.5/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="POST"/>
+        <actionEvents id="_rSngYFMqEfCbaIqdZEICjA" name="then">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_t-GPMFMqEfCbaIqdZEICjA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
+        </actionEvents>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:ViewContainer" id="_s3NlkFOsEfCOUPTvd4G1fg" name="Add Account Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElementEvents.1/@outInteractionFlows.0">
+        <annotations text="/account/add"/>
+        <viewElements xsi:type="ext:Form" id="_CpQgIFOuEfCOUPTvd4G1fg" name="Add Account">
+          <annotations text="ErrorModal"/>
+          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_NFoYYFOuEfCOUPTvd4G1fg" name="Submit">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_OrNPEFOuEfCOUPTvd4G1fg" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4"/>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_EtY7EFOuEfCOUPTvd4G1fg" name="Balance">
+            <annotations text="Required"/>
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_Gs24cFOuEfCOUPTvd4G1fg" name="balance"/>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_U7-fIFSWEfCQSYnpSPJcWA" name="Id Account">
+            <annotations text="Required"/>
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_XCb1UFSWEfCQSYnpSPJcWA" name="id_account"/>
+          </viewComponentParts>
+        </viewElements>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:IFMLAction" id="_Wd9PIFOtEfCOUPTvd4G1fg" name="Update Account" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.1/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="PUT"/>
+        <actionEvents id="_h4kysFQ5EfCTDKS2bdwFWQ" name="then">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_npOisFQ5EfCTDKS2bdwFWQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
+        </actionEvents>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:IFMLAction" id="_Tg5AMFShEfCQSYnpSPJcWA" name="Delete Account" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.2/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="DELETE"/>
+        <actionEvents id="_dGK4YFShEfCQSYnpSPJcWA" name="then">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_gC5vQFShEfCQSYnpSPJcWA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
+        </actionEvents>
+      </interactionFlowModelElement>
+    </interactionFlowModelElements>
+  </interactionFlowModel>
+  <domainModel id="_IJnoQVMoEfCbaIqdZEICjA">
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_IJsgwFMoEfCbaIqdZEICjA" name="account">
+      <structuralFeature xsi:type="uml:Property" href="account-uml-vm.uml#_ZGdV8ZrYEeyLx73CHiwHBA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_IJsgwVMoEfCbaIqdZEICjA" name="account">
+      <structuralFeature xsi:type="uml:Property" href="account-uml-vm.uml#_MZjwEJrZEeyLx73CHiwHBA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_IJsgwlMoEfCbaIqdZEICjA" name="account">
+      <structuralFeature xsi:type="uml:Property" href="account-uml-vm.uml#_BcVYEJraEeyLx73CHiwHBA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_IJsgw1MoEfCbaIqdZEICjA" name="account">
+      <structuralFeature xsi:type="uml:Property" href="account-uml-vm.uml#_0GY1MpraEeyLx73CHiwHBA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_IJsgxFMoEfCbaIqdZEICjA" name="account">
+      <structuralFeature xsi:type="uml:Property" href="account-uml-vm.uml#_ri7w8JrbEeyLx73CHiwHBA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_IJsgxVMoEfCbaIqdZEICjA" name="AccountImpl">
+      <classifier xsi:type="uml:Class" href="account-uml-vm.uml#_u75NoJrXEeyLx73CHiwHBA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_IJsgxlMoEfCbaIqdZEICjA" name="dailyLimit">
+      <structuralFeature xsi:type="uml:Property" href="account-uml-vm.uml#_02rxEJrXEeyLx73CHiwHBA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_IJsgx1MoEfCbaIqdZEICjA" name="withdraw">
+      <structuralFeature xsi:type="uml:Property" href="account-uml-vm.uml#_7_4BUJrXEeyLx73CHiwHBA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_IJsgyFMoEfCbaIqdZEICjA" name="account">
+      <structuralFeature xsi:type="uml:Property" href="account-uml-vm.uml#_ZGcH0JrYEeyLx73CHiwHBA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_IJsgyVMoEfCbaIqdZEICjA" name="update">
+      <behavioralFeature xsi:type="uml:Operation" href="account-uml-vm.uml#_Al0RsJrYEeyLx73CHiwHBA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_IJsgylMoEfCbaIqdZEICjA" name="AccountImpl">
+      <classifier xsi:type="uml:Class" href="account-uml-vm.uml#_hDmgwJraEeyLx73CHiwHBA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_IJsgy1MoEfCbaIqdZEICjA" name="account">
+      <structuralFeature xsi:type="uml:Property" href="account-uml-vm.uml#_0GYOIJraEeyLx73CHiwHBA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_IJsgzFMoEfCbaIqdZEICjA" name="estimatedInterest">
+      <behavioralFeature xsi:type="uml:Operation" href="account-uml-vm.uml#_4Y3XAJraEeyLx73CHiwHBA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_IJsgzVMoEfCbaIqdZEICjA" name="AccountImpl">
+      <classifier xsi:type="uml:Class" href="account-uml-vm.uml#_dsLHYJrZEeyLx73CHiwHBA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_IJsgzlMoEfCbaIqdZEICjA" name="interest_rate">
+      <structuralFeature xsi:type="uml:Property" href="account-uml-vm.uml#_j-LQ8JrZEeyLx73CHiwHBA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_IJsgz1MoEfCbaIqdZEICjA" name="account">
+      <structuralFeature xsi:type="uml:Property" href="account-uml-vm.uml#_Bb1BwJraEeyLx73CHiwHBA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_IJsg0FMoEfCbaIqdZEICjA" name="calculateInterest">
+      <behavioralFeature xsi:type="uml:Operation" href="account-uml-vm.uml#_sc04QJrZEeyLx73CHiwHBA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_IJsg0VMoEfCbaIqdZEICjA" name="AccountImpl">
+      <classifier xsi:type="uml:Class" href="account-uml-vm.uml#_hY6fkJnAEeyLx73CHiwHBA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_IJsg0lMoEfCbaIqdZEICjA" name="id_account">
+      <structuralFeature xsi:type="uml:Property" href="account-uml-vm.uml#_1vXB8Bl9Ee2GIq7YEmYfkw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_IJsg01MoEfCbaIqdZEICjA" name="balance">
+      <structuralFeature xsi:type="uml:Property" href="account-uml-vm.uml#_mZWTkJnAEeyLx73CHiwHBA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_IJtH0FMoEfCbaIqdZEICjA" name="update">
+      <behavioralFeature xsi:type="uml:Operation" href="account-uml-vm.uml#_k6fv8JnAEeyLx73CHiwHBA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_IJtH0VMoEfCbaIqdZEICjA" name="update">
+      <behavioralFeature xsi:type="uml:Operation" href="account-uml-vm.uml#_x6HdMKTmEeyxgo64OuD6Sg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_IJtH0lMoEfCbaIqdZEICjA" name="AccountImpl">
+      <classifier xsi:type="uml:Class" href="account-uml-vm.uml#_d36LYJrbEeyLx73CHiwHBA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_IJtH01MoEfCbaIqdZEICjA" name="overdraft_limit">
+      <structuralFeature xsi:type="uml:Property" href="account-uml-vm.uml#_fruSYJrbEeyLx73CHiwHBA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_IJtH1FMoEfCbaIqdZEICjA" name="account">
+      <structuralFeature xsi:type="uml:Property" href="account-uml-vm.uml#_ri57wZrbEeyLx73CHiwHBA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_IJtH1VMoEfCbaIqdZEICjA" name="update">
+      <behavioralFeature xsi:type="uml:Operation" href="account-uml-vm.uml#_SKV2APfDEe2uafyasgh9og"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_IJtH1lMoEfCbaIqdZEICjA" name="AccountImpl">
+      <classifier xsi:type="uml:Class" href="account-uml-vm.uml#_0JuH8JrYEeyLx73CHiwHBA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_IJtH11MoEfCbaIqdZEICjA" name="account">
+      <structuralFeature xsi:type="uml:Property" href="account-uml-vm.uml#_MZh64ZrZEeyLx73CHiwHBA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_IJtH2FMoEfCbaIqdZEICjA" name="credit">
+      <behavioralFeature xsi:type="uml:Operation" href="account-uml-vm.uml#_5D5i8JrYEeyLx73CHiwHBA"/>
+    </domainElements>
+  </domainModel>
+</core:IFMLModel>

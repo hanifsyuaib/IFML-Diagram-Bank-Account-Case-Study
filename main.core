@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="ASCII"?>
+<core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:dop-extension="http://amanah.cs.ui.ac.id/ifml/dop" xmlns:ext="http://www.omg.org/spec/20130218/ext" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_zkn6MFMnEfCbaIqdZEICjA">
+  <interactionFlowModel id="_3OKzwFMnEfCbaIqdZEICjA">
+    <interactionFlowModelElements xsi:type="core:ViewContainer" id="_3ONQAFMnEfCbaIqdZEICjA" name="Home" isXOR="true">
+      <annotations text="/"/>
+    </interactionFlowModelElements>
+    <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_4vA7cFMnEfCbaIqdZEICjA" name="BankAccount">
+      <annotations text="BankAccount"/>
+      <viewElementEvents id="_8gx84FMnEfCbaIqdZEICjA" name="BankAccount">
+        <outInteractionFlows xsi:type="core:NavigationFlow" id="_9ybK8FMnEfCbaIqdZEICjA">
+          <targetInteractionFlowElement xsi:type="core:ViewContainer" href="account.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
+        </outInteractionFlows>
+      </viewElementEvents>
+    </interactionFlowModelElements>
+    <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_x37LUFQ5EfCTDKS2bdwFWQ" name="Overdraft">
+      <annotations text="Overdraft"/>
+      <viewElementEvents id="_a90asFRzEfCQSYnpSPJcWA" name="Overdraft">
+        <outInteractionFlows xsi:type="core:NavigationFlow" id="_cPUe0FRzEfCQSYnpSPJcWA">
+          <targetInteractionFlowElement xsi:type="dop-extension:ModifiedViewContainer" href="overdraft.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
+        </outInteractionFlows>
+      </viewElementEvents>
+    </interactionFlowModelElements>
+  </interactionFlowModel>
+  <domainModel id="_zkn6MVMnEfCbaIqdZEICjA">
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_zlFNMFMnEfCbaIqdZEICjA" name="account">
+      <structuralFeature xsi:type="uml:Property" href="account-uml-vm.uml#_ZGdV8ZrYEeyLx73CHiwHBA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_zlHpcFMnEfCbaIqdZEICjA" name="account">
+      <structuralFeature xsi:type="uml:Property" href="account-uml-vm.uml#_MZjwEJrZEeyLx73CHiwHBA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_zlHpcVMnEfCbaIqdZEICjA" name="account">
+      <structuralFeature xsi:type="uml:Property" href="account-uml-vm.uml#_BcVYEJraEeyLx73CHiwHBA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_zlHpclMnEfCbaIqdZEICjA" name="account">
+      <structuralFeature xsi:type="uml:Property" href="account-uml-vm.uml#_0GY1MpraEeyLx73CHiwHBA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_zlHpc1MnEfCbaIqdZEICjA" name="account">
+      <structuralFeature xsi:type="uml:Property" href="account-uml-vm.uml#_ri7w8JrbEeyLx73CHiwHBA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_zlVE0FMnEfCbaIqdZEICjA" name="AccountImpl">
+      <classifier xsi:type="uml:Class" href="account-uml-vm.uml#_u75NoJrXEeyLx73CHiwHBA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_zlVE0VMnEfCbaIqdZEICjA" name="dailyLimit">
+      <structuralFeature xsi:type="uml:Property" href="account-uml-vm.uml#_02rxEJrXEeyLx73CHiwHBA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_zlVE0lMnEfCbaIqdZEICjA" name="withdraw">
+      <structuralFeature xsi:type="uml:Property" href="account-uml-vm.uml#_7_4BUJrXEeyLx73CHiwHBA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_zlVE01MnEfCbaIqdZEICjA" name="account">
+      <structuralFeature xsi:type="uml:Property" href="account-uml-vm.uml#_ZGcH0JrYEeyLx73CHiwHBA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_zlfc4FMnEfCbaIqdZEICjA" name="update">
+      <behavioralFeature xsi:type="uml:Operation" href="account-uml-vm.uml#_Al0RsJrYEeyLx73CHiwHBA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_zlfc4VMnEfCbaIqdZEICjA" name="AccountImpl">
+      <classifier xsi:type="uml:Class" href="account-uml-vm.uml#_hDmgwJraEeyLx73CHiwHBA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_zlfc4lMnEfCbaIqdZEICjA" name="account">
+      <structuralFeature xsi:type="uml:Property" href="account-uml-vm.uml#_0GYOIJraEeyLx73CHiwHBA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_zlfc41MnEfCbaIqdZEICjA" name="estimatedInterest">
+      <behavioralFeature xsi:type="uml:Operation" href="account-uml-vm.uml#_4Y3XAJraEeyLx73CHiwHBA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_zlfc5FMnEfCbaIqdZEICjA" name="AccountImpl">
+      <classifier xsi:type="uml:Class" href="account-uml-vm.uml#_dsLHYJrZEeyLx73CHiwHBA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_zlfc5VMnEfCbaIqdZEICjA" name="interest_rate">
+      <structuralFeature xsi:type="uml:Property" href="account-uml-vm.uml#_j-LQ8JrZEeyLx73CHiwHBA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_zlfc5lMnEfCbaIqdZEICjA" name="account">
+      <structuralFeature xsi:type="uml:Property" href="account-uml-vm.uml#_Bb1BwJraEeyLx73CHiwHBA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_zlfc51MnEfCbaIqdZEICjA" name="calculateInterest">
+      <behavioralFeature xsi:type="uml:Operation" href="account-uml-vm.uml#_sc04QJrZEeyLx73CHiwHBA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_zlfc6FMnEfCbaIqdZEICjA" name="AccountImpl">
+      <classifier xsi:type="uml:Class" href="account-uml-vm.uml#_hY6fkJnAEeyLx73CHiwHBA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_zlfc6VMnEfCbaIqdZEICjA" name="id_account">
+      <structuralFeature xsi:type="uml:Property" href="account-uml-vm.uml#_1vXB8Bl9Ee2GIq7YEmYfkw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_zlfc6lMnEfCbaIqdZEICjA" name="balance">
+      <structuralFeature xsi:type="uml:Property" href="account-uml-vm.uml#_mZWTkJnAEeyLx73CHiwHBA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_zlfc61MnEfCbaIqdZEICjA" name="update">
+      <behavioralFeature xsi:type="uml:Operation" href="account-uml-vm.uml#_k6fv8JnAEeyLx73CHiwHBA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_zlfc7FMnEfCbaIqdZEICjA" name="update">
+      <behavioralFeature xsi:type="uml:Operation" href="account-uml-vm.uml#_x6HdMKTmEeyxgo64OuD6Sg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_zlfc7VMnEfCbaIqdZEICjA" name="AccountImpl">
+      <classifier xsi:type="uml:Class" href="account-uml-vm.uml#_d36LYJrbEeyLx73CHiwHBA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_zlfc7lMnEfCbaIqdZEICjA" name="overdraft_limit">
+      <structuralFeature xsi:type="uml:Property" href="account-uml-vm.uml#_fruSYJrbEeyLx73CHiwHBA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_zlfc71MnEfCbaIqdZEICjA" name="account">
+      <structuralFeature xsi:type="uml:Property" href="account-uml-vm.uml#_ri57wZrbEeyLx73CHiwHBA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_zlfc8FMnEfCbaIqdZEICjA" name="update">
+      <behavioralFeature xsi:type="uml:Operation" href="account-uml-vm.uml#_SKV2APfDEe2uafyasgh9og"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_zlfc8VMnEfCbaIqdZEICjA" name="AccountImpl">
+      <classifier xsi:type="uml:Class" href="account-uml-vm.uml#_0JuH8JrYEeyLx73CHiwHBA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_zlfc8lMnEfCbaIqdZEICjA" name="account">
+      <structuralFeature xsi:type="uml:Property" href="account-uml-vm.uml#_MZh64ZrZEeyLx73CHiwHBA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_zlfc81MnEfCbaIqdZEICjA" name="credit">
+      <behavioralFeature xsi:type="uml:Operation" href="account-uml-vm.uml#_5D5i8JrYEeyLx73CHiwHBA"/>
+    </domainElements>
+  </domainModel>
+</core:IFMLModel>
