@@ -108,10 +108,12 @@
           </viewComponentParts>
           <viewComponentParts xsi:type="core:DataBinding" id="_0yo6kFMpEfCbaIqdZEICjA" name="AccountOptions" uniformResourceIdentifier="call/account/select-options">
             <subViewComponentParts xsi:type="ext:SelectionField" id="_2q748FMpEfCbaIqdZEICjA" name="From Account">
+              <annotations text="Required"/>
               <subViewComponentParts xsi:type="ext:IFMLSlot" id="_4rolYFMpEfCbaIqdZEICjA" name="id"/>
               <subViewComponentParts xsi:type="ext:IFMLSlot" id="_6o7_kFMpEfCbaIqdZEICjA" name="id_account" direction="out"/>
             </subViewComponentParts>
             <subViewComponentParts xsi:type="ext:SelectionField" id="_-17kcFMpEfCbaIqdZEICjA" name="To Account">
+              <annotations text="Required"/>
               <subViewComponentParts xsi:type="ext:IFMLSlot" id="_A8PwsFMqEfCbaIqdZEICjA" name="id"/>
               <subViewComponentParts xsi:type="ext:IFMLSlot" id="_CUjAYFMqEfCbaIqdZEICjA" name="id_account_target" direction="out"/>
             </subViewComponentParts>
