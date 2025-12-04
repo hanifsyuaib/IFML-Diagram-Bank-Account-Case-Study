@@ -34,7 +34,7 @@
           <viewElementEvents id="__3f-wFSgEfCQSYnpSPJcWA" name="Delete">
             <outInteractionFlows xsi:type="core:NavigationFlow" id="_Elc7oFShEfCQSYnpSPJcWA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.2">
               <parameterBindingGroup id="_NnarYFShEfCQSYnpSPJcWA">
-                <parameterBindings id="_QaVe8FShEfCQSYnpSPJcWA" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewComponentParts.0/@parameters.0">
+                <parameterBindings id="_QaVe8FShEfCQSYnpSPJcWA" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.1/@viewElements.0/@parameters.0">
                   <targetParameter href="overdraft.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.1/@parameters.0"/>
                 </parameterBindings>
               </parameterBindingGroup>
